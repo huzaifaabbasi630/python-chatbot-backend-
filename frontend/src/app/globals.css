@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-neutral-50 text-neutral-800 transition-colors duration-300;
+  scroll-behavior: smooth;
+}
+
+html.dark body {
+  @apply bg-slate-950 text-neutral-100;
+}
